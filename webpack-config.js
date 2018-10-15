@@ -22,7 +22,7 @@ const defaultConfig = {
   'header-bg-color': '#35485d',
   'sidebar-bg-color': '#3a3a3a',
   'footer-bg-color': '#3a3a3a',
-  'padding': '15px',
+  'padding': '1em',
   'transition-speed': '0.35s',
   'border-radius': '2px',
   'shadow-size': '1px'
