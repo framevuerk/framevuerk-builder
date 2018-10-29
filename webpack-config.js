@@ -11,7 +11,6 @@ const outputDir = userOutputDir ? path.resolve(process.cwd(), userOutputDir) : p
 const framevuerkPkg = require(path.resolve(framevuerkDir, './package.json'))
 
 const defaultConfig = {
-  'locale': 'en',
   'direction': 'ltr',
   'primary-color': '#41b883',
   'secondary-color': '#35485d',
