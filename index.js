@@ -1,9 +1,12 @@
 #!/usr/bin/env node
 
+const pkg = require('./package.json')
 const argv = require('./lib/argv.js')
 
 
-if (argv.is('build') || argv.cmd() === 'framevuerk-builder') {
+if (argv.is('--version') || argv.is('-v')) {
+  console.log(pkg.version)
+} else {
   const configs = require('./webpack-config.js')
   const webpack = require('webpack')
 
