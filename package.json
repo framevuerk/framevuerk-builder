@@ -1,6 +1,6 @@
 {
   "name": "framevuerk-builder",
-  "version": "2.0.0-rc2",
+  "version": "2.0.0-rc3",
   "description": "Framevuerk builder package.",
   "main": "index.js",
   "bin": "index.js",
@@ -46,5 +46,9 @@
     "webpack": "^3.12.0",
     "webpack-dev-server": "^2.11.3",
     "webpackbar": "^2.6.3"
+  },
+  "engines": {
+    "node": ">=6.0.0",
+    "npm": ">=5.0.0"
   }
 }
