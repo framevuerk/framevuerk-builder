@@ -30,7 +30,7 @@ let configs = [defaultConfig]
 if (configPath) {
   const configContent = require(path.resolve(process.cwd(), configPath))
   const parsedConfigContent = Array.isArray(configContent) ? configContent : [configContent]
-  configs = parsedConfigContent.map(config => JSON.stringify(JSON.parse(Object.assign(defaultConfig, config))))
+  configs = parsedConfigContent.map(config => JSON.parse(JSON.stringify(Object.assign(defaultConfig, config))))
 }
 
 const webpackConfigs = []
