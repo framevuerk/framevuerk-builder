@@ -41,9 +41,9 @@
     "rimraf": "^2.6.2",
     "sass-loader": "^7.0.1",
     "uglifyjs-webpack-plugin": "1.1.6",
-    "vue": "^2.5.21",
+    "vue": "^2.5.22",
     "vue-loader": "^15.4.2",
-    "vue-template-compiler": "^2.5.17",
+    "vue-template-compiler": "^2.5.22",
     "webpack": "^3.12.0",
     "webpack-dev-server": "^2.11.3",
     "webpackbar": "^2.6.3"
