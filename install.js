@@ -8,7 +8,7 @@ const parsedDependencies = Object.keys(devDependencies).map(dep => dep + '@' + d
 console.log('Installing framevuerk-builder...')
 install(parsedDependencies, {
   save: false,
-  saveDev: true,
+  saveDev: false,
   cache: true,
   silent: true
 }, function (err) {
