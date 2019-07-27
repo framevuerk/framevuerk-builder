@@ -30,9 +30,9 @@
     "npm": ">=5.0.0"
   },
   "dependencies": {
-    "npm-install-package": "^2.1.0"
+    "enpeem": "^2.2.0"
   },
-  "devDependencies": {
+  "customDependencies": {
     "ajv": "^6.10.2",
     "babel-cli": "^6.23.0",
     "babel-core": "^6.23.1",
