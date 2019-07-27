@@ -1,17 +1,15 @@
-const install = require('npm-install-package')
+const { install } = require('enpeem')
 
-const devDependencies = require('./package.json').devDependencies
+const dependencies = require('./package.json').customDependencies
+const parsedDependencies = Object.keys(dependencies).map(dep => dep + '@' + dependencies[dep])
 
-const parsedDependencies = Object.keys(devDependencies).map(dep => dep + '@' + devDependencies[dep])
-
-// const strDepenendecies = parsedDependencies.join(' ')
 console.log('Installing framevuerk-builder...')
-install(parsedDependencies, {
-  save: false,
-  saveDev: false,
-  cache: true,
-  silent: true
-}, function (err) {
+install({
+  dependencies: parsedDependencies,
+  loglevel: 'silent',
+  dir: __dirname,
+  'cache-min': 999999999
+}, err => {
   if (err) {
     console.log('Failed to install framevuerk-builder!')
     throw err
