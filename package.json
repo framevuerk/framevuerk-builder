@@ -1,6 +1,6 @@
 {
   "name": "framevuerk-builder",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "Framevuerk builder package.",
   "main": "index.js",
   "bin": "index.js",
