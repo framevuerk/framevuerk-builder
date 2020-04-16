@@ -1,5 +1,10 @@
-const mergedirs = require('merge-dirs');
 const path = require('path');
+var fs = require('fs-extra');
 
-// copy folder/a into folder/b with conflict resolution 'overwrite'
-mergedirs(path.resolve(__dirname, './node_modules'), path.resolve(__dirname, '../node_modules'), 'overwrite');
+fs.moveSync(
+  path.resolve(__dirname, './node_modules'),
+  path.resolve(__dirname, '../node_modules'),
+  {
+    overwrite: true
+  },
+);
